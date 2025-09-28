@@ -7,7 +7,7 @@
 }
 
 :root {
-    /* 50b2ea */
+  /* 50b2ea */
   --cor-primaria: #50b2ea;
   --cor-secundaria: #ffffff;
   --cor-terciaria: #469cce;
@@ -23,11 +23,14 @@ header {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header p {
-  width: 30%;
+  width: 50%;
   text-align: center;
+  font-size: 1rem;
 }
 
 .title-site {
@@ -42,6 +45,7 @@ header p {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 50%;
 }
 
 .service {
@@ -50,6 +54,8 @@ header p {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  width: 15%;
+  text-align: center;
 }
 
 .services {
@@ -57,6 +63,7 @@ header p {
   justify-content: center;
   align-items: center;
   gap: 100px;
+  width: 100%;
 }
 
 header button {
@@ -165,6 +172,7 @@ header button:hover {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  text-align: center;
 }
 
 .icons_services ul li {
@@ -185,7 +193,7 @@ header button:hover {
 }
 
 .Testymonials {
-  height: 600px;
+  height: 700px;
   width: 100%;
   background-color: var(--cor-primaria);
   display: flex;
@@ -202,6 +210,7 @@ header button:hover {
   flex-wrap: wrap;
   gap: 50px;
   padding-top: 50px;
+  height: 80%;
 }
 
 .card {
@@ -231,4 +240,43 @@ header button:hover {
 
 .text {
   width: 80%;
+}
+
+@media (max-width: 1280px) {
+  .card {
+    height: 25%;
+  }
+
+  .card h4 {
+    color: var(--cor-primaria);
+    font-size: 0.8rem;
+  }
+
+  .card p {
+    color: black;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  .card img {
+    width: 30%;
+  }
+
+  .Testymonials {
+    height: 700px;
+  }
+
+  .cards_Testymonials {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    height: 15%;
+  }
+
+  .card img {
+    width: 15%;
+  }
 }
